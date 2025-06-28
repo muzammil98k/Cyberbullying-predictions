@@ -1,0 +1,13 @@
+flask
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+scikit-learn
+xgboost
+lightgbm
+wordcloud
+emoji
+demoji
+joblib

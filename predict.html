@@ -1,0 +1,26 @@
+{% include "header_user.html" %}
+<div class="container">
+<div class="content">
+
+<form action="http://localhost:5000/predict" method="POST">
+
+        <h2>Get Cyberbullying Prediction</h2><br><br>
+
+        <h3>Enter the tweet</h3><br><br>
+        <textarea name="text1" placeholder="Enter the tweet: ...." rows="5" cols="109"></textarea><br><br>
+        <input type="image" name="submit" src="static/img/sub.png" class="send"/>
+        <br><br>
+
+
+
+        <br><br>
+
+        <div>
+            <h2>{{ prediction_category }}</h2><br>
+            <h4>{{ prediction_description }}</h4>
+        </div>
+
+
+    </form>
+    </div>
+</div>

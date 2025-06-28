@@ -1,0 +1,184 @@
+{% include "header_admin.html" %}
+<div class="container">
+    <table> <tr><td style="vertical-align: top">
+   <div id="menu">
+  <ul>
+
+    <li onclick="hide_tc()">Count Analysis</li>
+
+      <li style="background-color: darkblue; color: #f1f1f1">Tweet Length Analysis</li>
+    <li onclick="hide_nl()">Normal Tweets</li>
+    <li onclick="hide_gl()">Gender Tweets</li>
+    <li onclick="hide_rl()">Religion Tweets</li>
+    <li onclick="hide_el()">Ethnicity Tweets</li>
+
+      <li style="background-color: darkblue; color: #f1f1f1">Word Cloud Analysis</li>
+      <li onclick="hide_nw()">Normal Tweets</li>
+    <li onclick="hide_gw()">Gender Tweets</li>
+    <li onclick="hide_rw()">Religion Tweets</li>
+    <li onclick="hide_ew()">Ethnicity Tweets</li>
+
+
+  </ul>
+</div></td>
+        <td>
+
+<div class="loader" id="loader" style="display: none; margin: 150px"><div></div><div></div></div>
+<div id="AccDisplay"></div>
+     </td>
+</tr>
+</table>
+<div id="tc" style="display: none">
+     <img src="../static/pimg/tcnt.jpg"  width="700px" height="350px">
+</div>
+
+<div id="nl" style="display: none">
+     <img src="../static/pimg/ncb.jpg"  width="700px" height="350px">
+</div>
+
+<div id="gl" style="display: none">
+     <img src="../static/pimg/gen.jpg"  width="700px" height="350px">
+</div>
+
+<div id="rl" style="display: none">
+     <img src="../static/pimg/rel.jpg"  width="700px" height="350px">
+</div>
+
+<div id="el" style="display: none">
+     <img src="../static/pimg/eth.jpg"  width="700px" height="350px">
+</div>
+<div id="nw" style="display: none">
+     <img src="../static/pimg/wncb.jpg"  width="700px" height="350px">
+</div>
+    <div id="gw" style="display: none">
+     <img src="../static/pimg/wgen.jpg"  width="700px" height="350px">
+</div>
+<div id="rw" style="display: none">
+     <img src="../static/pimg/wrel.jpg"  width="700px" height="350px">
+</div>
+<div id="ew" style="display: none">
+     <img src="../static/pimg/weth.jpg"  width="700px" height="350px">
+</div>
+
+
+
+
+</div>
+
+<script>
+var myVar;
+
+function hide_tc() {
+  document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_tc, 1500);
+}
+
+function show_tc() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('tc').innerHTML;
+}
+
+function hide_nl() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_nl, 1500);
+}
+
+function show_nl() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('nl').innerHTML;
+}
+
+function hide_gl() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_gl, 1500);
+}
+
+function show_gl() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('gl').innerHTML;
+}
+
+function hide_el() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_el, 1500);
+}
+
+function show_el() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('el').innerHTML;
+}
+
+function hide_rl() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_rl, 1500);
+}
+
+function show_rl() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('rl').innerHTML;
+}
+
+function hide_nw() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_nw, 1500);
+}
+
+function show_nw() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('nw').innerHTML;
+}
+
+function hide_gw() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_gw, 1500);
+}
+
+function show_gw() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('gw').innerHTML;
+}
+
+function hide_rw() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_rw, 1500);
+}
+
+function show_rw() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('rw').innerHTML;
+}
+
+function hide_ew() {
+    document.getElementById("AccDisplay").style.display = "none";
+  document.getElementById("loader").style.display = "block";
+  myVar = setTimeout(show_ew, 1500);
+}
+
+function show_ew() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("AccDisplay").style.display = "block";
+document.getElementById('AccDisplay').innerHTML=document.getElementById('ew').innerHTML;
+}
+
+
+
+</script>
+</body>
+
+</html>
